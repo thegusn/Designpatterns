@@ -1,0 +1,18 @@
+package com.guan.facade;
+
+public class TheaterLight {
+    private static TheaterLight instance=new TheaterLight();
+    public static TheaterLight getInstance(){
+        return instance;
+    }
+
+    public void on(){
+        System.out.println("TheaterLight on");
+    }
+    public void off(){
+        System.out.println("TheaterLight off");
+    }
+    public void pop(){
+        System.out.println("TheaterLight pop");
+    }
+}
